@@ -20,7 +20,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-top: 12em; 
+    padding-top: 10.5em; 
     padding-bottom: 10em;
 }
 
@@ -77,7 +77,7 @@ header {
 
 .container {
     width: 100%;
-    margin: 1.5em auto 0;
+    margin: 0 auto ;
 }
 
 .justify-content-center {
@@ -163,19 +163,20 @@ header {
 .container {
     font-size: 1em;
     font-weight: 300;
-    margin-top: -2em;
+    margin-top: -1.5em;
     }
 
 .height {
     height: auto;
     border-left: solid 5px rgb(230, 230, 230);
     border-right: solid 5px rgb(230, 230, 230);
+    margin-top: 1em;
     }
 
 #video_bg {
         top: 0;
         right: 0;
-        bottom: -8em;
+        bottom: 0;
         left: 0;
         width: 100%;
     }
@@ -185,14 +186,18 @@ header {
     }
 
 .for-grid {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 
 .post-img > img {
-    height: 35vh;
-    width: 40vw;
+    height: 30vh;
+    width: 60vw;
     object-fit: cover;
+    padding-bottom: 2em;
 }
+
 
 }
 
@@ -201,5 +206,16 @@ header {
         height: 25vh;
         width: 60vw;
         object-fit: cover;
+    }
+}
+
+@media (max-width: 770px) {
+    .to-media-contain {
+        width: 100%;
+        margin: 1em auto;
+        font-size: 0.8em;
+    }
+    .bg_white {
+        margin-top: 1.5em;
     }
 }
